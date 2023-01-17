@@ -1,0 +1,11 @@
+[Unit]
+Description=File Mover
+
+[Service]
+WorkingDirectory=/usr/bin
+ExecStart= /bin/bash /usr/bin/mover.sh
+Restart=on-failure
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
